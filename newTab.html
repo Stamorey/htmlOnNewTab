@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Героин не наркотик</title>
+    <style>
+        body {
+            background-color: #151515;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 40px;
+            font-size: 3.2em;
+            font-weight: 900;
+            color: white;
+            position: relative;
+            animation: wave 3s infinite ease-in-out;
+        }
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .search-bar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 700px;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1000px;
+            margin-top: 50px;
+        }
+        .tile {
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            transition: transform 0.2s, filter 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-width: 160px;
+        }
+        .tile:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+        .pl4ce {
+            background: linear-gradient(135deg, #ff9900, #ff6600);
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.6);
+        }
+        .youtube {
+            background: linear-gradient(135deg, #ff4e50, #c81d25);
+            box-shadow: 0 0 15px rgba(255, 78, 80, 0.6);
+        }
+        .funpay {
+            background: linear-gradient(135deg, #4a90e2, #007aff);
+            box-shadow: 0 0 15px rgba(0, 122, 255, 0.6);
+        }
+        .gmail {
+            background: linear-gradient(135deg, #34a853, #0f9d58);
+            box-shadow: 0 0 15px rgba(52, 168, 83, 0.6);
+        }
+        .fatality {
+            background: linear-gradient(135deg, #8e2de2, #4a00e0);
+            box-shadow: 0 0 15px rgba(142, 45, 226, 0.6);
+        }
+        .chatgpt {
+            background: linear-gradient(135deg, #cccccc, #555555);
+            box-shadow: 0 0 15px rgba(180, 180, 180, 0.4);
+        }
+        .telegram {
+            background: linear-gradient(135deg, #0088cc, #005f99);
+            box-shadow: 0 0 15px rgba(0, 136, 204, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Добро пожаловать</h1>
+
+<div class="search-bar">
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Искать в Google...">
+    </form>
+</div>
+
+<div class="grid">
+    <a href="https://panel.pl4ce.top" class="tile pl4ce">PL4CE Panel</a>
+    <a href="https://www.youtube.com" class="tile youtube">YouTube</a>
+    <a href="https://funpay.com" class="tile funpay">FunPay</a>
+    <a href="https://mail.google.com" class="tile gmail">Gmail</a>
+    <a href="https://fatality.win" class="tile fatality">Fatality</a>
+    <a href="https://chat.openai.com" class="tile chatgpt">ChatGPT</a>
+    <a href="https://web.telegram.org" class="tile telegram">Telegram</a>
+</div>
+
+</body>
+</html>
